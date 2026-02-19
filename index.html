@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAPOSO SILAHISABUNGAN DPD BANTEN</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #800000; /* Merah Marun Khas Batak */
+            --secondary-color: #d4af37; /* Emas */
+            --dark-color: #212529;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: var(--primary-color);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: var(--secondary-color) !important;
+            font-size: 1.2rem;
+        }
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+        }
+        .nav-link:hover {
+            color: var(--secondary-color) !important;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/1600x900/?indonesia,monas'); 
+            /* Ganti URL di atas dengan foto latar belakang jika punya */
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            text-shadow: 2px 2px 4px black;
+        }
+
+        /* Section Headers */
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+            font-weight: bold;
+            text-transform: uppercase;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--secondary-color);
+            margin: 10px auto;
+        }
+
+        /* Cards (Pengurus) */
+        .pengurus-card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .pengurus-card:hover {
+            transform: translateY(-5px);
+        }
+        .pengurus-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid var(--secondary-color);
+            margin-top: 20px;
+        }
+
+        /* Tabel Anggota */
+        .table-responsive {
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .table thead {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .footer-logo {
+            color: var(--secondary-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example" tabindex="0">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="navbar-example">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-mountain"></i> NAPOSO DPD BANTEN
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#visimisi">VISI MISI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#struktur">STRUKTUR & TUGAS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pengurus">PENGURUS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#anggota">ANGGOTA</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">NAPOSO SILAHISABUNGAN<br>POMPARAN RAJA SILAHISABUNGAN UALU TURPUK</h1>
+            <p class="lead mt-3">DPD PROVINSI BANTEN</p>
+            <a href="#visimisi" class="btn btn-warning mt-4">Selengkapnya</a>
+        </div>
+    </section>
+
+    <!-- VISI MISI SECTION -->
+    <section id="visimisi" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Visi & Misi Organisasi</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-primary">
+                        <div class="card-header bg-primary text-white">
+                            <h4><i class="fas fa-eye"></i> VISI</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Menjadi organisasi yang solid, Aspired, dan bermartabat untuk mempererat tali persaudaraan keluarga besar Silahisabungan di Provinsi Banten serta berkontribusi positif bagi masyarakat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-primary">
+                        <div class="card-header bg-primary text-white">
+                            <h4><i class="fas fa-bullseye"></i> MISI</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul>
+                                <li>Mempererat tali silaturohmi antaranggota.</li>
+                                <li>Melestarikan budaya Batak (Adat, Rap, Ibadat).</li>
+                                <li>Membantu anggota yang membutuhkan.</li>
+                                <li>Menjembatani komunikasi dengan pemerintah daerah.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TUGAS POKOK & SEKSI BIDANG -->
+    <section id="struktur" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Tugas Pokok & Seksi Bidang</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card mb-3">
+                        <div class="card-header bg-dark text-white">TUGAS POKOK (TUPOKSI)</div>
+                        <div class="card-body">
+                            <p>Menjalankan tugas sebagai organisasi kepemudaan/tim dalam lingkungan keluarga besar Silahisabungan sesuai AD/ART yang berlaku.</p>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-4">
+                            <h5 class="text-primary">BIDANG PIMPINAN & ORGANISASI</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item">Sekretaris</li>
+                                <li class="list-group-item">Bendahara</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="text-primary">BIDANG USAHA & KRIA</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item">Promosi & Dana</li>
+                                <li class="list-group-item">Usaha Mikro</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="text-primary">BIDANG SOSIAL & BUDAYA</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item">Pendidikan & Pelatihan</li>
+                                <li class="list-group-item">Seni & Budaya</li>
+                                <li class="list-group-item">Olahraga</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DAFTAR PENGURUS -->
+    <section id="pengurus" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Daftar Pengurus DPD</h2>
+            <div class="row">
+                <!-- Ketua -->
+                <div class="col-md-4">
+                    <div class="card pengurus-card">
+                        <img src="https://via.placeholder.com/150" class="pengurus-img mx-auto d-block" alt="Foto Ketua">
+                        <div class="card-body">
+                            <h5 class="card-title">Nama Ketua Umum</h5>
+                            <p class="text-muted">Ketua Umum</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sekretaris -->
+                <div class="col-md-4">
+                    <div class="card pengurus-card">
+                        <img src="https://via.placeholder.com/150" class="pengurus-img mx-auto d-block" alt="Foto Sekertaris">
+                        <div class="card-body">
+                            <h5 class="card-title">Nama Sekretaris</h5>
+                            <p class="text-muted">Sekretaris Umum</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bendahara -->
+                <div class="col-md-4">
+                    <div class="card pengurus-card">
+                        <img src="https://via.placeholder.com/150" class="pengurus-img mx-auto d-block" alt="Foto Bendahara">
+                        <div class="card-body">
+                            <h5 class="card-title">Nama Bendahara</h5>
+                            <p class="text-muted">Bendahara Umum</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <button class="btn btn-outline-secondary">Lihat Semua Pengurus</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- DAFTAR ANGGOTA -->
+    <section id="anggota" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Daftar Anggota</h2>
+            <div class="mb-3">
+                <input type="text" id="searchInput" class="form-control" placeholder="Cari nama anggota...">
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover" id="anggotaTable">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Lengkap</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Alamat (Asal Daerah)</th>
+                            <th>Status Anggota</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>JONIS SILAHISABUNGAN</td>
+                            <td>Laki-Laki</td>
